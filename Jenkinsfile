@@ -11,7 +11,7 @@ pipeline {
         stage("Build") {
             steps {
                 sh 'echo $PATH'
-                sh '/opt/apache-maven-3.9.6/bin/mvn clean deploy'
+                sh 'mvn clean deploy'
             }
         }
     }
